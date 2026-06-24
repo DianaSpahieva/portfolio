@@ -15,6 +15,7 @@ hugoblox:
     # Site name - shown in navbar, footer, copyright, and browser title by default
     name: "Diana Spahieva"
     icon: "🐼"
+    favicon: "/favicon.png"  # Try adding this line
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
