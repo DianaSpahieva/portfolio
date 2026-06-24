@@ -1,8 +1,6 @@
 # [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
 
 
-Diana Diana Diana Diana Diana Diana Diana Diana Diana Diana
-
 [![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=preview)
 
 <!-- TODO: Replace with a short demo video showing Hugo Chat generating an academic profile page -->
@@ -46,12 +44,17 @@ Diana Diana Diana Diana Diana Diana Diana Diana Diana Diana
 
 ## Why This Template?
 
+Diana Diana Diana Diana Diana Diana Diana Diana Diana Diana
+
 Most academic CVs are static PDFs that get lost in the pile. This is an **always-on portfolio** that works 24/7 to advance your career:
 
 - **Students & grads** applying to top labs and industry roles — stand out with a living portfolio, not a flat PDF
 - **Researchers** who want a citable online presence with publications, projects, and talks in one place
 - **Faculty & PIs** showcasing their lab, group news, and team members
 - **Anyone with publications** who wants auto-imported citations from BibTeX/DOI without manual formatting
+
+
+Diana Diana Diana Diana Diana Diana Diana Diana Diana Diana
 
 > *"My citations went up 3x after switching to this template. Colleagues started finding my work through Google Scholar links back to my site. The BibTeX auto-sync is a lifesaver."*
 > — **Dr. Li Zhang**, AI Research Scientist
