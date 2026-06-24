@@ -1,6 +1,6 @@
 ---
 title: "Diana's Academic Portfolio"
-summary: "Diana's personal academic portfolio featuring bio, publications, news, experience, and projects tutorials."
+summary: "Diana Nikolaeva's personal academic portfolio featuring bio, publications, news, experience, and projects tutorials."
 date: 2026-06-24
 type: landing
 sections:
