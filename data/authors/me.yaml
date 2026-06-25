@@ -20,96 +20,122 @@ bio: |
   terms of sustainability.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: My projects
+    url: https://dianaspahieva.github.io/portfolio/projects/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:diana.nikolaeva.spahieva@gmail.com
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
+  #- icon: brands/x
+  #  url: https://x.com/example
   - icon: brands/github
-    url: https://github.com/example
+    url: https://github.com/DianaSpahieva?tab=repositories
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://www.linkedin.com/in/diana-nikolaeva
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://research.tue.nl/en/studentTheses/detection-of-anger-direction-using-transfer-learning-classificati/
+  #- icon: academicons/orcid
+  #  url: https://orcid.org/0000-0002-1825-0097
 
 interests:
+  - Machine Learning
+  - Data Visualization
+  - Natural Language Processing (NLP)
+  - Cloud Computing
+  - Data Engineering & Data Pipelines
   - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
-
+  - Explainable AI & AI Ethics
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  #- degree: PhD Computer Science
+  #  institution: Stanford University
+  #  start: 2015-09-01
+  #  end: 2019-06-30
+  #  summary: |
+  #    Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+  #  button:
+  #    text: Download dissertation
+  #    url: /resume.pdf
+  #    icon: hero/arrow-down-tray
+  - degree: MS Data Science in Business and Entrepreneurship
+    institution: Tilburg University, Eindhoven University of Technology
+    start: 2025-09-01
+    end: 2027-06-30
+  - degree: BS Data Science
+    institution: Tilburg University, Eindhoven University of Technology
+    start: 2018-09-01
+    end: 2022-06-30
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
+      Thesis on detection of anger direction using transfer learning classification models
     button:
       text: Download dissertation
-      url: /resume.pdf
+      url: https://research.tue.nl/en/studentTheses/detection-of-anger-direction-using-transfer-learning-classificati/
       icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Data Science Consultant
+    org: upwerk
+    start: 2022-07-01
+    end: 2025-08-30
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+      Leading
+      - Created data-driven dashboards using Django, PostgreSQL, and JavaScript, offering clients insightful visualizations and analytics tailored to their business needs.
+      - Designed and implemented database schemas, optimized queries, and ensured the security of user data through best practices in database management and encryption.
+      - MAYBE DELETE Collaborated with clients to gather requirements and provide solutions that were cost-effective and aligned with business goals, delivering projects on time.
+      - EXPAND Finetuned English LLM for BG usage.
     button:
       text: View portfolio
-      url: /
+      url: /projects
       icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+  - role: Data Engineer Intern
+    org: NXP Semiconductors
+    start: 2023-08-15
+    end: 2024-06-30
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      - Designed a monitoring system in Splunk to detect data gaps in an R&D data lake.
+      - Developed a Splunk dashboard to provide real-time monitoring and visibility into data streams and alert the responsible team when gaps or inconsistencies were detected.
+      - Utilized AWS Glue jobs and Lambda functions for data orchestration, integrating on-premise databases with the serverless AWS architecture of the data lake.
+      - Tested new features locally using Docker containers to validate functionality and dependencies before deploying to the AWS environment for further integration testing.
+      - Enhanced the scalability and performance of the data lake by addressing potential bottlenecks and recommending process optimizations for long-term reliability.
+      - Tracked development tasks using Jira and documented the end-to-end workﬂow in Conﬂuence to enable knowledge transfer and future improvements by the data lake management team.
 
 skills:
-  - name: Technical Skills
+  - name: Data Science Skills
     items:
-      - label: Python
-        level: 5
       - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
         level: 4
-  - name: Research & Communication
+      - label: Pandas / Scikit-learn / TensorFlow
+        level: 4
+      - label: NLP / Social Network Analysis
+        level: 4
+      - label: Data Analytics & Visualization
+        level: 5
+  - name: Data Engineering Skills
     items:
-      - label: Academic Writing
+      - label: Python / R / SQL
         level: 5
-      - label: Conference Presentations
+      - label: AWS / GCP
         level: 4
-      - label: Grant Proposals
+      - label: ETL Pipelines / Apache Spark
         level: 4
+      - label: CI/CD / Docker
+        level: 3
 
 languages:
   - name: English
     level: 5
+    label: Proficient (C2)
+  - name: Bulgarian
+    level: 5
     label: Native
-  - name: Spanish
-    level: 4
-    label: Fluent
+  - name: German / Dutch
+    level: 2
+    label: Intermediate
 
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+#awards:
+  #- title: Best Paper Award
+  #  awarder: NeurIPS
+  #  date: "2022-12-01"
+  #  summary: Awarded for groundbreaking work on efficient training of large models.
+  #  icon: hero/trophy

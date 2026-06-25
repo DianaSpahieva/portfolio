@@ -22,10 +22,10 @@ sections:
     content:
       title: Skills & Hobbies
       username: me
-  - block: resume-awards
-    content:
-      title: Awards
-      username: me
+  #- block: resume-awards     # uncomment to add certificates / awards
+  #  content:
+  #    title: Awards
+  #    username: me
   - block: resume-languages
     content:
       title: Languages
