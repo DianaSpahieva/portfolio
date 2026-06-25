@@ -86,7 +86,7 @@ experience:
       - EXPAND Finetuned English LLM for BG usage.
     button:
       text: View portfolio
-      url: /projects
+      url: /portfolio/projects # test
       icon: hero/arrow-down-tray
   - role: Data Engineer Intern
     org: NXP Semiconductors
