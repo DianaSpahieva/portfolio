@@ -3,7 +3,7 @@ title: Project 6 - SEO & AI-Ready Tutorial
 date: 2025-10-31 # to change
 links:
   - type: site
-    url: https://dianaspahieva.github.io/portfolio/blog/notebook-onboarding/ # to change
+    url: https://dianaspahieva.github.io/portfolio/blog/data-visualization/ # to change
 tags:
   - SEO
   - AI
