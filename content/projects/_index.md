@@ -9,6 +9,7 @@ sections:
     content:
       title: Selected Projects
       text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      count: 0  # Set to 0 to show ALL projects, or 10 to show up to 10
       filters:
         folders:
           - projects
