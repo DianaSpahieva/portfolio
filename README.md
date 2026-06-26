@@ -1,248 +1,247 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/hugo-theme-academic-cv)
+# 🌐 Personal Portfolio – Data Science & Data Engineering
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=preview)
-
-<!-- TODO: Replace with a short demo video showing Hugo Chat generating an academic profile page -->
-<!-- https://github.com/user-attachments/assets/REPLACE_ME -->
-
-<h1 align="center">The Portfolio That Works While You Sleep</h1>
+<h1 align="center">Building intelligent data solutions that turn complex data into actionable insights.</h1>
 
 <p align="center">
-  <strong>Your unfair advantage in academia.</strong><br/>
-  Stop sending PDFs into the void. Build a living portfolio that boosts citations, attracts collaborators, and lands offers — all from simple Markdown files you own.<br/>
-  Built on <a href="https://github.com/HugoBlox/kit">HugoBlox</a> — the open-source framework where AI generates your pages and you own everything as Markdown.
+  My personal portfolio showcasing my experience in <strong>Data Science</strong>,
+  <strong>Data Engineering</strong>, and <strong>Machine Learning</strong>.
+  Here you'll find my professional experience, technical projects, education,
+  and the technologies I'm passionate about.
 </p>
 
 <p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=cta_top"><b>Deploy Free (60s)</b></a>
+  <a href="https://dianaspahieva.github.io/portfolio/"><b>🌍 Live Portfolio</b></a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=cta_top_academic-cv"><b>Customize with AI</b></a>
+  <a href="https://github.com/DianaSpahieva"><b>GitHub</b></a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=demo">Live Demo</a>
-</p>
-
-<div align="center">
-
-  <a href="https://github.com/HugoBlox/hugo-theme-academic-cv">
-    <img src="https://img.shields.io/github/stars/HugoBlox/hugo-theme-academic-cv?label=Star&logo=github&style=flat-square&color=181717" alt="GitHub Stars">
-  </a>
-  <a href="https://discord.gg/z8wNYzb">
-    <img src="https://img.shields.io/discord/722225264733716590?label=Discord&logo=discord&logoColor=white&style=flat-square&color=5865F2" alt="Discord">
-  </a>
-  <a href="https://github.com/HugoBlox/kit">
-    <img src="https://img.shields.io/github/stars/HugoBlox/kit?label=HugoBlox&logo=github&style=flat-square&color=181717" alt="HugoBlox Stars">
-  </a>
-
-</div>
-
-<p align="center">
-  <sub>Part of the <a href="https://github.com/HugoBlox/kit"><strong>HugoBlox</strong></a> ecosystem · Trusted by <strong>150,000+</strong> researchers at <strong>MIT, Stanford, Google & NVIDIA</strong> · Rated <strong>4.9/5</strong> (official survey) · Since <strong>2016</strong></sub>
+  <a href="https://www.linkedin.com/in/diana-nikolaeva"><b>LinkedIn</b></a>
 </p>
 
 ---
 
-## Why This Template?
+# 👋 About
 
-Most academic CVs are static PDFs that get lost in the pile. This is an **always-on portfolio** that works 24/7 to advance your career:
+Hi! I'm **YOUR NAME**, a Data Scientist and Data Engineer currently pursuing an MSc in **Data Science in Business and Entrepreneurship** at Eindhoven University of Technology and Tilburg University.
 
-- **Students & grads** applying to top labs and industry roles — stand out with a living portfolio, not a flat PDF
-- **Researchers** who want a citable online presence with publications, projects, and talks in one place
-- **Faculty & PIs** showcasing their lab, group news, and team members
-- **Anyone with publications** who wants auto-imported citations from BibTeX/DOI without manual formatting
+I enjoy solving problems with data.
 
-> *"My citations went up 3x after switching to this template. Colleagues started finding my work through Google Scholar links back to my site. The BibTeX auto-sync is a lifesaver."*
-> — **Dr. Li Zhang**, AI Research Scientist
+Whether it's building machine learning models, developing cloud-based data pipelines, or creating interactive dashboards, I enjoy transforming complex data into meaningful insights that support better decisions.
 
-> *"I set this up during a weekend and my PhD students had their profiles live by Monday. They just edit Markdown — no tickets to IT, no WordPress logins."*
-> — **Prof. Sarah Chen**, Computer Science, ETH Zürich
+My interests lie at the intersection of:
 
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=cta_mid">
-    <img src="https://img.shields.io/badge/⚡️%20Deploy%20Your%20CV%20in%2060s-7c3aed?style=for-the-badge" alt="Deploy this template" width="400">
-  </a>
-</p>
+- 🤖 Machine Learning
+- ☁️ Data Engineering
+- 📊 Data Analytics
+- 🧠 Natural Language Processing
+- 🚀 Cloud Computing
+- 🔍 Explainable AI
+
+I'm particularly interested in applying data and AI to solve real-world problems with measurable business and societal impact.
 
 ---
 
-## Features
+# 🚀 What You'll Find
 
-| Feature | Benefit |
-| :--- | :--- |
-| **BibTeX / DOI auto-import** | Drop in a `.bib` file — publication pages generated automatically with proper citations. |
-| **Jupyter & RMarkdown** | Publish `.ipynb` notebooks as beautiful posts — code, outputs, and narrative intact. |
-| **LaTeX math** | Native rendering for equations and technical writing. |
-| **Markdown slides** | Present with reveal.js — math, syntax highlighting, diagrams, speaker notes. |
-| **SEO & AI-ready** | Optimized for search engines and LLMs — your work gets found, cited, and recommended. |
-| **AI page generation** | Describe what you need to [Hugo Chat](https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=features_academic-cv) — get structured pages with correct front matter instantly. |
-| **Visual editor** | Drag-and-drop blocks in VS Code with [Ownable CMS](https://marketplace.visualstudio.com/items?itemName=ownable.ownable). No coding needed. |
-| **Plain Markdown** | Every file is human-readable. No database, no lock-in, take your content anywhere. |
-| **Free hosting** | Deploy to GitHub Pages, Netlify, Vercel, or Cloudflare — all free tier. |
+This portfolio brings together my academic, professional, and personal work, including:
+
+- 💼 Professional experience
+- 📚 Education
+- 🚀 Featured projects
+- 🛠 Technical skills
+- 📄 Downloadable CV
+- 📬 Contact information
+
+Rather than being a static CV, this portfolio is continuously updated as I learn new technologies and complete new projects.
 
 ---
 
-## 🚀 Get Started
+# 💻 Featured Projects
 
-### Step 1: Deploy Your Site
+## 📈 Identifying High-Potential Customers
 
-**Option A: Launch in browser** (fastest — no install needed)
+Developed an automated data collection pipeline using Python and Selenium to gather company insights from public sources. Built a Power BI dashboard and customer segmentation model to help prioritize sales opportunities.
 
-> [!TIP]
-> Deploy a live site in 60 seconds — no software to install:
-> [**Deploy Academic CV free**](https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=get_started)
+**Technologies**
 
-**Option B: Use the CLI**
+- Python
+- Selenium
+- NLP
+- Power BI
 
-```bash
-# Requires Hugo Extended & Node.js
-npx hugoblox create site --template academic-cv
+---
+
+## 🌿 Biodiversity Insights Network
+
+Built an end-to-end NLP pipeline that extracts topics and stakeholder relationships from biodiversity documents using BERT topic modeling and Social Network Analysis.
+
+**Technologies**
+
+- Python
+- NLP
+- BERT
+- Power BI
+- Social Network Analysis
+
+---
+
+## 🏛 BHIC Data Visualization Tool
+
+Developed an interactive Django application for exploring historical genealogical datasets through a variety of visualizations including network graphs, treemaps, and population analytics.
+
+**Technologies**
+
+- Django
+- Python
+- JavaScript
+- Data Visualization
+
+---
+
+# 🛠 Tech Stack
+
+## Data Science
+
+- Python
+- R
+- SQL
+- Machine Learning
+- TensorFlow
+- Scikit-learn
+- Pandas
+- NumPy
+- NLP
+- Power BI
+
+## Data Engineering
+
+- AWS
+- Google Cloud Platform
+- ETL Pipelines
+- Apache Spark
+- Docker
+- SQL
+- CI/CD
+
+## Software Development
+
+- Django
+- PostgreSQL
+- MongoDB
+- Git
+- Linux
+- JavaScript
+
+---
+
+# 📂 Repository Structure - TO BE UPDATED
+
+```text
+content/
+├── authors/
+├── experience/
+├── projects/
+├── publications/
+├── skills/
+└── cv/
+
+assets/
+layouts/
+static/
 ```
 
-### Step 2: Customize With AI + Visual Editing
+---
 
-<table>
-<tr>
-<td width="50%">
+# 🎯 Current Interests
 
-**✨ Hugo Chat** — AI customization
-
-Tell Hugo Chat what you want in plain English. It generates structured pages with the right front matter, shortcodes, and blocks for this template.
-
-> *"Add a publications page with my 2024 papers from this BibTeX file"*
-
-[**Try Hugo Chat — free**](https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=step2_academic-cv)
-
-</td>
-<td width="50%">
-
-**Ownable CMS** — visual editing in VS Code
-
-1. Install [Ownable CMS](https://marketplace.visualstudio.com/items?itemName=ownable.ownable)
-2. Open your project in VS Code
-3. Click the Ownable icon to start editing visually
-
-</td>
-</tr>
-</table>
-
-![Ownable CMS in Action](https://raw.githubusercontent.com/HugoBlox/kit/main/.github/media/studio/slide-1.webp)
-*Ownable CMS: Drag-and-drop page builder inside VS Code.*
-
-> [!NOTE]
-> **New to Hugo?** No problem. You don't need to know Hugo — edit visually or write Markdown. Hugo is the engine under the hood that makes your site fast, secure, and free to host. [Learn more →](https://docs.ownable.dev/?utm_source=github&utm_medium=readme&utm_content=docs_academic-cv)
+- Machine Learning
+- Large Language Models
+- Natural Language Processing
+- Cloud Computing
+- Data Engineering
+- Data Pipelines
+- Explainable AI
+- Data Visualization
 
 ---
 
-## 💎 Go Premium
+# 📈 Current Focus
 
-Love the free version? **Academic CV Pro** and **Resume Pro** take it further:
+I'm currently expanding my knowledge in:
 
-- Premium designs that make an unforgettable first impression
-- Advanced timeline and layout options
-- Full-featured course/lecture sections
-- Remove attribution, priority support
+- Modern Data Engineering
+- Cloud-native architectures
+- Large Language Models
+- Machine Learning in production
+- Scalable ETL pipelines
 
-| | **Academic CV** (Free) | **Academic CV Pro** |
-| :--- | :---: | :---: |
-| Design | Professional & clean | **Premium designs** |
-| Layouts | Standard sections | **Advanced timelines** |
-| Courses/lectures | Basic | **Full-featured** |
-| Support | Community | **Priority** |
+---
+
+# 🤝 Collaboration
+
+I'm always interested in discussing:
+
+- Data Science
+- Machine Learning
+- Data Engineering
+- AI
+- Cloud Technologies
+- Sustainability-focused projects
+
+Feel free to connect if you'd like to collaborate or simply talk about data and technology.
+
+---
+
+# ❓ Frequently Asked Questions
+
+<details>
+<summary><b>Is this portfolio still being updated?</b></summary>
+
+Yes! This portfolio evolves alongside my career. I regularly add new projects, improve existing pages, and update my experience and skills.
+
+</details>
+
+<details>
+<summary><b>Can I see the source code for your projects?</b></summary>
+
+Many projects link directly to their GitHub repositories. Some professional and freelance work cannot be shared publicly due to confidentiality.
+
+</details>
+
+<details>
+<summary><b>Are these projects academic or professional?</b></summary>
+
+The portfolio contains a combination of university projects, professional experience, and freelance work to showcase a broad range of practical experience.
+
+</details>
+
+<details>
+<summary><b>What roles are you interested in?</b></summary>
+
+I'm interested in opportunities within Data Science, Data Engineering, Machine Learning, and Analytics Engineering where I can build scalable, data-driven solutions with real-world impact.
+
+</details>
+
+<details>
+<summary><b>Why build a personal portfolio?</b></summary>
+
+A portfolio allows me to present more than a traditional CV. It showcases how I approach problems, the technologies I use, and the projects I've built throughout my academic and professional journey.
+
+</details>
+
+---
+
+# 📫 Connect
+
+🌍 Portfolio: https://dianaspahieva.github.io/portfolio/
+
+💼 LinkedIn: https://www.linkedin.com/in/diana-nikolaeva
+
+💻 GitHub: https://github.com/DianaSpahieva/portfolio
+
+📧 Email: diana.nikolaeva.spahieva@gmail.com
+
+---
 
 <p align="center">
-  <a href="https://hugoblox.com/pricing?utm_source=github&utm_medium=readme&utm_content=premium_academic-cv"><b>Compare plans</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugoblox.com/templates/academic-cv-pro?utm_source=github&utm_medium=readme&utm_content=premium_deploy_academic-cv"><b>Deploy Academic CV Pro</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro?utm_source=github&utm_medium=readme&utm_content=premium_deploy_resume"><b>Deploy Resume Pro</b></a>
+  Built with ❤️ and continuously improved as I learn and build new things.
 </p>
-
----
-
-## 🏆 Why HugoBlox?
-
-> *Why not just use WordPress, Webflow, or an AI builder like Lovable?*
-
-| | **AI builders** (Lovable, v0) | **CMS platforms** (WordPress, Webflow) | **HugoBlox** |
-| :--- | :---: | :---: | :---: |
-| AI generates your pages | Yes | No | **Yes** |
-| You own the output as readable files | No — React code | No — database | **Yes — Markdown** |
-| Free to host forever | No | No | **Yes** |
-| Human-editable without the tool | Barely | No | **Yes — it's Markdown** |
-| Open source | No | No | **Yes — MIT licensed** |
-
-> [!IMPORTANT]
-> Your content is plain Markdown files. No lock-in, no database, no vendor dependency. If you ever want to leave, take your files and go.
-
----
-
-## FAQ
-
-<details>
-<summary><b>Do I need to know Hugo?</b></summary>
-No. Edit visually with Ownable CMS or write Markdown. Hugo is the build engine — you don't need to touch it.
-</details>
-
-<details>
-<summary><b>Can I import my existing publications?</b></summary>
-Yes. Drop a BibTeX file and publication pages are generated automatically with proper citations, metadata, and links.
-</details>
-
-<details>
-<summary><b>Can I host for free?</b></summary>
-Yes. GitHub Pages, Netlify, Vercel, and Cloudflare Pages all have free tiers for static sites.
-</details>
-
-<details>
-<summary><b>Can I migrate my content later?</b></summary>
-Yes. Your site is just Markdown files in a folder. Copy them anywhere.
-</details>
-
-<details>
-<summary><b>What's Hugo Chat?</b></summary>
-An AI assistant trained on Hugo and HugoBlox docs. Describe what you want and it generates the right pages with correct front matter. <a href="https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=faq_academic-cv">Free to try.</a>
-</details>
-
-<details>
-<summary><b>Can I cancel Pro anytime?</b></summary>
-Yes. No questions asked.
-</details>
-
----
-
-<h2 align="center">🚀 Ready to launch?</h2>
-
-<p align="center">
-  Deploy in 60 seconds. Customize with AI. Own it as Markdown forever.
-</p>
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv?utm_source=github&utm_medium=readme&utm_content=cta_final"><b>Deploy Academic CV — free</b></a>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="https://hugo.chat/?utm_source=github&utm_medium=readme&utm_content=cta_final_academic-cv"><b>Customize with AI</b></a>
-</p>
-
----
-
-## Community & Support
-
-- 💬 [**Discord**](https://discord.gg/z8wNYzb) — ask questions, share your site
-- 📚 [**Docs**](https://docs.ownable.dev/?utm_source=github&utm_medium=readme&utm_content=community_academic-cv)
-- ⭐ [**Star HugoBlox**](https://github.com/HugoBlox/kit) — help others find it
-- 🐦 [**Follow on X**](https://x.com/GoOwnable)
-
-### Sponsors
-
-[**❤️ Sponsor on GitHub**](https://github.com/sponsors/gcushen) | [**🏢 Become a Partner**](https://github.com/sponsors/gcushen)
-
----
-
-Copyright 2016-present [**Lore Labs**](https://lore.tech/?utm_source=github&utm_medium=readme).
-Released under the [MIT License](./LICENSE.md).
-
-<p align="center">
-  <sub>HugoBlox is a trademark of Lore Labs.</sub>
-</p>
-
-<!--START_SECTION:news-->
-<!--Updated at 2026-06-21T02:39:19.406Z-->
-<!--END_SECTION:news-->
