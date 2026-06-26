@@ -20,3 +20,19 @@ Leverage your computational notebooks to publish reproducible research and tutor
 - Keep your website content in sync with your data and analysis pipeline.
 
 This turns your scientific workflow into dynamic, online documents.
+
+### Research Visualizations
+![Analysis Plot 1](plot1.png)
+{{< figure src="plot2.png" caption="Distribution of research results over time." numbered="true" >}}
+You can add as many as you need by just referencing the filename!
+
+
+### Analysis Walkthrough
+{{< notebook
+    src="demo_notebook.ipynb"
+    show_code=false
+    show_outputs=true
+>}}
+
+Customizing the View:
+![Analysis Plot 4](plot4.png)
