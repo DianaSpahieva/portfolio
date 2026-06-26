@@ -35,75 +35,79 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '🚀 What I am Working On'
       subtitle: ''
       text: |-
         I enjoy solving problems with data.
         
-        Whether it is building machine learning models, developing data pipelines, or creating interactive dashboards, I am motivated by turning raw data into actionable insights. I am particularly interested in the intersection of data science, data engineering, and AI, and how these technologies can be used to support smarter decisions and create positive societal impact.
+        Whether it's building machine learning models, developing data pipelines, or creating interactive dashboards, I am motivated by turning raw data into actionable insights. I am particularly interested in the intersection of data science, data engineering, and AI, and how these technologies can be used to support smarter decisions and create positive societal impact.
         
-        I am always interested in learning from others and exploring new opportunities to collaborate. 😃
+        Explore some of my recent projects below to see how I've applied these interests to real-world data science and data engineering challenges.
     design:
       columns: '1'
   - block: collection
-    id: papers
+    id: recent projects
     content:
-      title: Featured Publications
+      title: Recent Projects
       filters:
         folders:
-          - publications
-        featured_only: true
+          - projects
+        featured_only: false
+      count: 3
     design:
       view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      columns: 3
+    disabled:
+    - block: collection
+      content:
+        title: Recent Publications
+        text: ''
+        filters:
+          folders:
+            - publications
+          exclude_featured: false
+      design:
+        view: citation
+    disabled1:   # how you can disable a block if needed
+    - block: collection
+      id: talks
+      content:
+        title: Recent & Upcoming Talks
+        filters:
+          folders:
+            - events
+      design:
+        view: card
+    disabled2:   # how you can disable a block if needed
+    - block: collection
+      id: news
+      content:
+        title: Recent News
+        subtitle: ''
+        text: ''
+        # Page type to display. E.g. post, talk, publication...
+        page_type: blog
+        # Choose how many pages you would like to display (0 = all pages)
+        count: 10
+        # Filter on criteria
+        filters:
+          author: ''
+          category: ''
+          tag: ''
+          exclude_featured: false
+          exclude_future: false
+          exclude_past: false
+          publication_type: ''
+        # Choose how many pages you would like to offset by
+        offset: 0
+        # Page order: descending (desc) or ascending (asc) date.
+        order: desc
+      design:
+        # Choose a layout view
+        view: card
+        # Reduce spacing
+        spacing:
+          padding: [0, 0, 0, 0]
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
