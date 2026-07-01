@@ -11,7 +11,6 @@ tags:
 
 Convert your Jupyter notebooks and RMarkdown documents directly into web posts with embedded code and outputs.
 
-Hugo documentation - https://hugoblox.com/docs/guide/building/slides
 
 
 Leverage your computational notebooks to publish reproducible research and tutorials:
