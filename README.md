@@ -21,9 +21,7 @@
 
 # 👋 About
 
-Hi! I'm **YOUR NAME**, a Data Scientist and Data Engineer currently pursuing an MSc in **Data Science in Business and Entrepreneurship** at Eindhoven University of Technology and Tilburg University.
-
-I enjoy solving problems with data.
+Hi! I'm Diana, a Data Scientist and Data Engineer who enjoys solving problems with data.
 
 Whether it's building machine learning models, developing cloud-based data pipelines, or creating interactive dashboards, I enjoy transforming complex data into meaningful insights that support better decisions.
 
@@ -130,24 +128,6 @@ Developed an interactive Django application for exploring historical genealogica
 - Git
 - Linux
 - JavaScript
-
----
-
-# 📂 Repository Structure - TO BE UPDATED
-
-```text
-content/
-├── authors/
-├── experience/
-├── projects/
-├── publications/
-├── skills/
-└── cv/
-
-assets/
-layouts/
-static/
-```
 
 ---
 
