@@ -71,3 +71,9 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+
+# NEWLY ADDED
+node_modules/
+package-lock.json
+yarn.lock
