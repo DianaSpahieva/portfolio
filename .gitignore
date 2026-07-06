@@ -24,6 +24,7 @@ hugo_stats.json
 # Git and VsCode files
 .github/
 .vscode/
+.devcontainer/
 
 # ============================================================================
 # Node.js & Package Managers
