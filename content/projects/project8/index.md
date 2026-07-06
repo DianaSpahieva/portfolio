@@ -1,5 +1,5 @@
 ---
-title: Project 8 - Subscriber Cancellations Data Pipeline project
+title: Project 8 - 🔕 Subscriber Cancellations Data Pipeline project 🔕
 date: 2026-01-20 # to change
 links:
   - type: site
@@ -9,8 +9,6 @@ tags:
   - Bash Scripting
   - Python
 ---
-
-# Subscriber Cancellations Data Pipeline
 
 ## Overview
 
