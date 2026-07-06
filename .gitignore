@@ -22,8 +22,8 @@ hugo_stats.json
 **/assets/jsconfig.json
 
 # Git and VsCode files
-.github
-.vscode
+.github/
+.vscode/
 
 # ============================================================================
 # Node.js & Package Managers
