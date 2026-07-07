@@ -33,6 +33,61 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+
+  - block: markdown # NEWLY ADDED
+    content:
+      title: '🏷️ Areas of Expertise'
+      subtitle: ''
+      text: |-
+        Explore my work by topic:
+
+        <div class="flex flex-wrap gap-3 mt-4">
+
+        <a href="/portfolio/tags/machine-learning/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Machine Learning
+        </a>
+
+        <a href="/portfolio/tags/data-engineering/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Data Engineering
+        </a>
+
+        <a href="/portfolio/tags/data-pipelines/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Data Pipelines
+        </a>
+
+        <a href="/portfolio/tags/natural-language-processing/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Natural Language Processing
+        </a>
+
+        <a href="/portfolio/tags/data-visualization/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Data Visualization
+        </a>
+
+        <a href="/portfolio/tags/cloud-computing/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Cloud Computing
+        </a>
+
+        <a href="/portfolio/tags/large-language-models/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Large Language Models
+        </a>
+
+        <a href="/portfolio/tags/responsible-ai/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Responsible AI
+        </a>
+
+        <a href="/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Python
+        </a>
+
+        <a href="/portfolio/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Python with Dash Portfolio
+        </a>
+
+        </div>
+    design:
+      columns: '1'
+      css_class: expertise-section
+
   - block: markdown
     content:
       title: '🚀 What I am Working On'
