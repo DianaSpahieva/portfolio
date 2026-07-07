@@ -72,12 +72,8 @@ sections:
         Bash Scripting
         </a>
 
-        <a href="/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
-        Python for my parents site
-        </a>
-
         <a href="/portfolio/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
-        Python with Dash Portfolio
+        Python
         </a>
 
         </div>
