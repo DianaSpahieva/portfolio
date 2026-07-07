@@ -51,32 +51,29 @@ sections:
         Data Engineering
         </a>
 
-        <a href="/portfolio/tags/data-pipelines/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
-        Data Pipelines
+        <a href="/portfolio/tags/data-pipeline/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Data Pipeline
         </a>
 
-        <a href="/portfolio/tags/natural-language-processing/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
-        Natural Language Processing
-        </a>
 
         <a href="/portfolio/tags/data-visualization/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
         Data Visualization
         </a>
 
-        <a href="/portfolio/tags/cloud-computing/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
-        Cloud Computing
+        <a href="/portfolio/tags/classification/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Classification
         </a>
 
         <a href="/portfolio/tags/large-language-models/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
         Large Language Models
         </a>
 
-        <a href="/portfolio/tags/responsible-ai/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
-        Responsible AI
+        <a href="/portfolio/tags/bash-scripting/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Bash Scripting
         </a>
 
         <a href="/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
-        Python
+        Python for my parents site
         </a>
 
         <a href="/portfolio/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
