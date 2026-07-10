@@ -43,7 +43,7 @@ sections:
 
         <div class="flex flex-wrap gap-3 mt-4">
 
-        <a href="/portfolio/tags/machine-learning/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/machine-learning/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Machine Learning
         </a>
 
