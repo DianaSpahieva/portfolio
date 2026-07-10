@@ -47,49 +47,49 @@ sections:
         Machine Learning
         </a>
 
-        <a href="/portfolio/tags/data-engineering/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/data-engineering/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Data Engineering
         </a>
 
-        <a href="/portfolio/tags/data-pipeline/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/data-pipeline/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Data Pipeline
         </a>
 
 
-        <a href="/portfolio/tags/data-visualization/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/data-visualization/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Data Visualization
         </a>
 
-        <a href="/portfolio/tags/classification/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/classification/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Classification
         </a>
 
-        <a href="/portfolio/tags/large-language-models/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/large-language-models/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Large Language Models
         </a>
 
-        <a href="/portfolio/tags/bash-scripting/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/bash-scripting/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Bash Scripting
         </a>
 
-        <a href="/portfolio/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/python/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Python
         </a>
 
-        <a href="/portfolio/tags/large-language-models/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/large-language-models/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Large Language Models
         </a>
 
-        <a href="/portfolio/tags/explainable-AI-and-AI-ethics/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/explainable-AI-and-AI-ethics/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Explainable AI & AI Ethics
         </a>
 
-        <a href="/portfolio/tags/nlp/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/nlp/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Natural Language Processing (NLP)
 
         </a>
 
-        <a href="/portfolio/tags/cloud-computing/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        <a href="/portfolio/tags/cloud-computing/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Cloud Computing
         </a>
 
