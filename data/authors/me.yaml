@@ -12,7 +12,7 @@ postnominals:
   - PhD
   - MIEEE
 status:
-  icon: "☕️"
+  #icon: "☕️" # added coffee icon next to my pic
 role: Data Scientist & Engineer
 bio: |
   My main interests lie in the ﬁeld of Data Science with an emphasis on applied machine learning and software development,
@@ -38,14 +38,14 @@ links:
   #- icon: academicons/orcid
   #  url: https://orcid.org/0000-0002-1825-0097
 
-interests:
-  - Machine Learning
-  - Data Visualization
-  - Natural Language Processing (NLP)
-  - Cloud Computing
-  - Data Engineering & Data Pipelines
-  - Large Language Models
-  - Explainable AI & AI Ethics
+#interests: # uncomment if you want to see
+#  - Machine Learning
+#  - Data Visualization
+#  - Natural Language Processing (NLP)
+#  - Cloud Computing
+#  - Data Engineering & Data Pipelines
+#  - Large Language Models
+#  - Explainable AI & AI Ethics
   
 education:
   #- degree: PhD Computer Science
@@ -122,6 +122,16 @@ skills:
         level: 4
       - label: CI/CD / Docker
         level: 3
+
+  - name: ─────────────────
+    items: []
+    
+  - name: Hobbies
+    items:
+      - label: Hiking and Yoga
+      - label: Live music
+      - label: Board Games and Dungeons & Dragons
+      - label: Efoil (Fliteboard)
 
 languages:
   - name: English

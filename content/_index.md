@@ -36,7 +36,7 @@ sections:
 
   - block: markdown # NEWLY ADDED
     content:
-      title: '🏷️ Areas of Expertise'
+      title: '✨ Interests'
       subtitle: ''
       text: |-
         Explore my work by topic:
@@ -74,6 +74,23 @@ sections:
 
         <a href="/portfolio/tags/python/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
         Python
+        </a>
+
+        <a href="/portfolio/tags/large-language-models/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Large Language Models
+        </a>
+
+        <a href="/portfolio/tags/explainable-AI-and-AI-ethics/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Explainable AI & AI Ethics
+        </a>
+
+        <a href="/portfolio/tags/nlp/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Natural Language Processing (NLP)
+
+        </a>
+
+        <a href="/portfolio/tags/cloud-computing/" class="px-4 py-2 rounded-full border border-green-700 bg-black/20 hover:bg-green-900/30 transition no-underline">
+        Cloud Computing
         </a>
 
         </div>

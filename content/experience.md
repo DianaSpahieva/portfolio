@@ -20,7 +20,7 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: Skills & Hobbies
+      title: Skills and Hobbies
       username: me
   #- block: resume-awards     # uncomment to add certificates / awards
   #  content:
