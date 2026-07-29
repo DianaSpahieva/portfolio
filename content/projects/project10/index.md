@@ -150,6 +150,17 @@ with:
 
 This allows the agent to generate recommendations based on both factual location data and additional travel context.
 
+### Credential management and developer experience
+
+The application supports a flexible Bring Your Own Key (BYOK) workflow:
+
+- Users can provide an OpenAI API key directly through the application interface.
+- If a local `api.txt` file containing an API key is detected, the key is automatically imported for the active session.
+- Users can replace or clear the active key without modifying stored configuration files.
+- API keys are kept in Streamlit session memory and are not committed to the repository.
+
+This approach improves local development convenience while avoiding hardcoded credentials.
+
 ### User feedback integration
 The application includes a lightweight feedback mechanism:
 - Users can upvote or downvote recommended POIs.
