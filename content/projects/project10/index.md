@@ -18,7 +18,7 @@ tags:
 
 ## 🧭 Overview
 
-This project demonstrates how to build an AI agent that combines **LLM reasoning, tool calling, external APIs, retrieval, validation, and interactive visualization** to generate personalized multi-day travel itineraries.
+This project demonstrates how to build an AI agent that combines **LLM capabilities, tool calling, external APIs, retrieval, validation, and interactive visualization** to generate personalized multi-day travel itineraries.
 
 Rather than using the LLM only as a text generator, the application implements an agent workflow where the model can interact with external tools to retrieve real-world information, incorporate additional context through retrieval-augmented generation (RAG), and generate structured itineraries based on validated data.
 
@@ -34,7 +34,7 @@ flowchart TD
 
     B --> C[OpenAI Responses API<br/>LLM Agent]
 
-    C --> D{Tool Calling Loop}
+    C --> D{Agent Tool Calling Loop}
 
     D --> E[search_pois]
     D --> F[retrieve_guides]
@@ -55,10 +55,11 @@ flowchart TD
 
     J --> L[Local Persistence]
     L --> L1[app_state.json]
-    L --> L2[feedback.jsonl]
+    L --> L2[Feedback Storage]
 
     L2 --> M[POI Ranking Boost]
 ```
+---
 
 ## 🤖 AI Agent Workflow
 
@@ -107,13 +108,15 @@ Implemented tools:
 
 To improve reliability and reduce unsupported model outputs:
 
-- Tool schemas enforce structured inputs and outputs.
+- Tool schemas enforce structured inputs and validated outputs.
 - Retrieved POIs are validated before being used in generated itineraries.
 - The agent cannot reference POIs that were not returned by the retrieval tools.
 - External API failures are handled through graceful fallbacks.
 
+---
 
-## 🤖 AI Agent Workflow
+## ⚙️ Key Engineering Challenges
+
 ### Reliable LLM outputs
 
 LLMs can generate plausible but incorrect information. To improve reliability:
@@ -122,21 +125,29 @@ LLMs can generate plausible but incorrect information. To improve reliability:
 - The agent cannot reference POIs that were not returned by the retrieval tools.
 
 ### Integrating external APIs
+
 The application combines multiple external data sources:
+
 - OpenStreetMap for live geospatial information.
 - Wikivoyage for optional travel knowledge retrieval.
+
 This required handling external dependencies, structured responses, and potential service limitations.
 
 ### Combining structured and unstructured retrieval
+
 The system combines:
+
 - Structured geospatial retrieval:
-      - POIs;
-      coordinates;
-      metadata
+  - POIs;
+  - coordinates;
+  - metadata
+
 with:
+
 - Unstructured text retrieval:
-      - travel descriptions;
-      contextual information
+  - travel descriptions;
+  - contextual information
+
 This allows the agent to generate recommendations based on both factual location data and additional travel context.
 
 ### User feedback integration
@@ -145,7 +156,10 @@ The application includes a lightweight feedback mechanism:
 - Feedback is stored locally.
 - Previous preferences create a ranking boost for future POI searches for the same destination.
 
+---
+
 ## 🧠 Technical Skills Demonstrated
+
 - LLM Agent Development
 - OpenAI Responses API
 - Function Calling / Tool Calling
@@ -158,7 +172,10 @@ The application includes a lightweight feedback mechanism:
 - Python Application Development
 - Local Data Persistence
 
+---
+
 ## 📌 Key Insights
+
 This project highlights several important considerations when building practical AI systems.
 
 Key findings include:
@@ -169,15 +186,19 @@ Key findings include:
 
 Overall, the project demonstrates how LLMs can be integrated with traditional software engineering practices to build more reliable AI applications.
 
+---
 
 ## 📦 Technologies
+
 - Python
 - OpenAI Responses API
 - Streamlit
 - PyDeck
 - Pandas
 - Scikit-learn
-- OpenStreetMap APIs: Nominatim, Overpass API
+- OpenStreetMap APIs
+  - Nominatim
+  - Overpass API
 - Wikivoyage / Wikimedia APIs
 - Git
 - JSON-based local persistence
