@@ -61,6 +61,20 @@ flowchart TD
 ```
 ---
 
+## 🖼️ Application Demo
+
+The application provides an interactive interface for generating, validating, and exploring AI-generated travel itineraries.
+
+### Trip Planning Interface
+
+![Trip Planner interface](demo1a.png)
+
+### Generated Itinerary and Map Visualization
+
+![Generated itinerary map](demo1b.png)
+
+---
+
 ## 🤖 AI Agent Workflow
 
 The application uses an iterative agent loop where the LLM can decide when external tools are required and incorporate returned information before generating the final itinerary.
