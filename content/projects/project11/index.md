@@ -1,10 +1,10 @@
 ---
-title: Project 11🗺️ - Classifying Banking Intent from Customer Queries | Data Modelling Project
+title: Project 11🏦 - Classifying Banking Intent from Customer Queries | Data Modelling Project
 date: 2026-02-12
 links:
   - type: github
     name: 👾 GitHub Repository
-    url: https://github.com/DianaSpahieva/trip-planner-ai-agent # to change
+    url: https://github.com/DianaSpahieva/customer-intent-classification-banking
 tags:
   - Natural Language Processing
   - Text Classification
