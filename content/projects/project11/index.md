@@ -6,224 +6,278 @@ links:
     name: 👾 GitHub Repository
     url: https://github.com/DianaSpahieva/trip-planner-ai-agent # to change
 tags:
-  - Artificial Intelligence
-  - LLM Agents
-  - Data Engineering
+  - Natural Language Processing
+  - Text Classification
+  - Deep Learning
+  - Transformers
+  - LoRA
   - Python
 ---
 
-**AI Agents | Tool Calling | External API Integration | Retrieval-Augmented Generation (RAG) | Interactive Visualization**
+# 🏦 Banking Customer Intent Classification
+
+**Natural Language Processing | Text Classification | Transformer Fine-Tuning | LoRA | Privacy-Aware ML**
 
 ---
 
 ## 🧭 Overview
 
-This project demonstrates how to build an AI agent that combines **LLM capabilities, tool calling, external APIs, retrieval, validation, and interactive visualization** to generate personalized multi-day travel itineraries.
+This project develops a natural language classification pipeline for identifying the intent behind banking customer queries.
 
-Rather than using the LLM only as a text generator, the application implements an agent workflow where the model can interact with external tools to retrieve real-world information, incorporate additional context through retrieval-augmented generation (RAG), and generate structured itineraries based on validated data.
+Using the **Banking77** dataset, the task is to classify short customer messages into **77 distinct banking intents**, ranging from card issues and payment problems to identity verification and account-related requests.
 
-The travel planner serves as the application domain, while the main focus of the project is the engineering of a reliable LLM-powered system.
+Rather than relying on a single model, the project compares two approaches:
+
+1. A **TF-IDF + MLP** neural-network baseline
+2. A **RoBERTa model fine-tuned using LoRA**
+
+The project also incorporates a **PII protection step into the prediction workflow**, allowing sensitive information such as card details, email addresses, and phone numbers to be redacted or hashed before classification.
+
+The main objective was to evaluate whether a parameter-efficient transformer approach could provide a meaningful improvement over a conventional text-classification baseline.
 
 ---
 
 ## 🏗️ System Architecture
 
-```mermaid
-flowchart TD
-    A[User] --> B[Streamlit Interface]
-
-    B --> C[OpenAI Responses API<br/>LLM Agent]
-
-    C --> D{Agent Tool Calling Loop}
-
-    D --> E[search_pois]
-    D --> F[retrieve_guides]
-
-    E --> G[OpenStreetMap APIs]
-    G --> G1[Nominatim<br/>Geocoding]
-    G --> G2[Overpass API<br/>POI Retrieval]
-
-    F --> H[Wikivoyage / Wikimedia<br/>RAG Retrieval]
-    H --> H1[TF-IDF + Cosine Similarity]
-
-    G2 --> I[Data Validation Layer]
-    H1 --> I
-
-    I --> J[Generated Itinerary]
-
-    J --> K[PyDeck Map Visualization]
-
-    J --> L[Local Persistence]
-    L --> L1[app_state.json]
-    L --> L2[Feedback Storage]
-
-    L2 --> M[POI Ranking Boost]
-```
----
-
-## 🖼️ Application Demo
-
-The application provides an interactive interface for generating, validating, and exploring AI-generated travel itineraries.
-
-### Trip Planning Interface
-
-![Trip Planner interface](demo1a.png)
-
-### Generated Itinerary and Map Visualization
-
-![Generated itinerary map](demo1b.png)
-
----
-
-## 🤖 AI Agent Workflow
-
-The application uses an iterative agent loop where the LLM can decide when external tools are required and incorporate returned information before generating the final itinerary.
-
-Unlike a traditional chatbot that only generates text from a prompt, this system allows the model to interact with external data sources through custom tools, improving reliability and grounding recommendations in real-world information.
-
+The project follows the workflow below:
 
 ```text
-User Preferences
-        ↓
-OpenAI Responses API Agent
-        ↓
-Tool Selection
-        ↓
-+-------------------------+
-| search_pois             |
-| retrieve_guides         |
-+-------------------------+
-        ↓
-External Data Retrieval
-        ↓
-Validation of Returned Data
-        ↓
-Structured Itinerary Generation
-        ↓
-Interactive Visualization
+                         Banking77 Dataset
+                                │
+                                ▼
+                    ┌──────────────────────┐
+                    │ Data Exploration &   │
+                    │ Preprocessing        │
+                    └──────────┬───────────┘
+                               │
+                 ┌─────────────┴─────────────┐
+                 ▼                           ▼
+          TF-IDF Vectorization        RoBERTa Tokenization
+                 │                           │
+                 ▼                           ▼
+             MLP Model                RoBERTa + LoRA
+                 │                           │
+                 └─────────────┬─────────────┘
+                               ▼
+                      Model Evaluation
+                               │
+              ┌────────────────┼────────────────┐
+              ▼                ▼                ▼
+           Accuracy         Macro F1       Weighted F1
+                               │
+                               ▼
+                       PII-Safe Inference
+                               │
+                               ▼
+                     Predicted Intent
 ```
+## 📊 Dataset
 
-### Tool Calling
+The project uses the **Banking77** dataset, containing short natural-language queries written as examples of banking customer requests.
 
-The agent is provided with custom tools and can request their execution depending on the user's requirements.
+### Dataset characteristics
 
-Implemented tools:
+- **77** unique intent classes
+- **13,083** total queries
+- **10,003** training examples
+- **3,080** test examples
 
-- **`search_pois(city, interests, radius_km, limit, query)`**
-  - Retrieves real-world points of interest (POIs) from OpenStreetMap.
-  - Uses Nominatim for geocoding and Overpass API for POI retrieval.
-  - Returns structured POI information including identifiers and coordinates.
+Examples include intents related to:
 
-- **`retrieve_guides(city, query, k)`**
-  - Provides optional travel context through Wikivoyage/Wikimedia retrieval.
-  - Uses TF-IDF ranking with cosine similarity to identify useful context for itinerary generation.
+- card problems
+- unrecognized payments
+- cash withdrawals
+- identity verification
+- transfers
+- direct debits
+- account and banking services
 
-### Guardrails
-
-To improve reliability and reduce unsupported model outputs:
-
-- Tool schemas enforce structured inputs and validated outputs.
-- Retrieved POIs are validated before being used in generated itineraries.
-- The agent cannot reference POIs that were not returned by the retrieval tools.
-- External API failures are handled through graceful fallbacks.
+Before modeling, the dataset was explored through several visualizations, including class distributions, query-length distributions, and word clouds for frequently occurring intents.
 
 ---
 
-## ⚙️ Key Engineering Challenges
+## 🧠 Modeling Approach
 
-### Reliable LLM outputs
+### 1. TF-IDF + MLP Baseline
 
-LLMs can generate plausible but incorrect information. To improve reliability:
-- Tool schemas use strict validation.
-- Generated itineraries are checked against retrieved POIs.
-- The agent cannot reference POIs that were not returned by the retrieval tools.
+The first approach provides a conventional neural-network baseline.
 
-### Integrating external APIs
+Customer queries are converted into numerical representations using **TF-IDF**, configured with:
 
-The application combines multiple external data sources:
+- lowercase text
+- unigrams and bigrams
+- minimum document frequency of 2
+- maximum document frequency of 95%
+- up to 50,000 features
 
-- OpenStreetMap for live geospatial information.
-- Wikivoyage for optional travel knowledge retrieval.
+The resulting feature vectors are passed to a multilayer perceptron classifier with **77 output classes**.
 
-This required handling external dependencies, structured responses, and potential service limitations.
+This establishes a useful benchmark before introducing a pretrained transformer.
 
-### Combining structured and unstructured retrieval
+---
 
-The system combines:
+### 2. RoBERTa + LoRA
 
-- Structured geospatial retrieval:
-  - POIs;
-  - coordinates;
-  - metadata
+The second approach uses the pretrained **RoBERTa-base** transformer for sequence classification.
+
+Instead of fine-tuning the entire model, I used **LoRA (Low-Rank Adaptation)** to perform parameter-efficient fine-tuning.
+
+The LoRA configuration targeted the transformer's:
+
+- query projections
+- key projections
+- value projections
 
 with:
 
-- Unstructured text retrieval:
-  - travel descriptions;
-  - contextual information
+- rank: `32`
+- LoRA alpha: `64`
+- dropout: `0.05`
 
-This allows the agent to generate recommendations based on both factual location data and additional travel context.
+Only a small fraction of the full model was trainable:
 
-### Credential management and developer experience
+**2.42M trainable parameters out of 127.12M total parameters (~1.9%)**
 
-The application supports a flexible Bring Your Own Key (BYOK) workflow:
-
-- Users can provide an OpenAI API key directly through the application interface.
-- If a local `api.txt` file containing an API key is detected, the key is automatically imported for the active session.
-- Users can replace or clear the active key without modifying stored configuration files.
-- API keys are kept in Streamlit session memory and are not committed to the repository.
-
-This approach improves local development convenience while avoiding hardcoded credentials.
-
-### User feedback integration
-The application includes a lightweight feedback mechanism:
-- Users can upvote or downvote recommended POIs.
-- Feedback is stored locally.
-- Previous preferences create a ranking boost for future POI searches for the same destination.
+This allowed the project to use a pretrained transformer while updating substantially fewer parameters than full model fine-tuning.
 
 ---
 
-## 🧠 Technical Skills Demonstrated
+## 📈 Model Comparison
 
-- LLM Agent Development
-- OpenAI Responses API
-- Function Calling / Tool Calling
-- Retrieval-Augmented Generation (RAG)
-- External API Integration
-- Data Retrieval Pipelines
-- Structured Data Validation
-- Geospatial Data Processing
-- Interactive Data Visualization
-- Python Application Development
-- Local Data Persistence
+The two approaches were evaluated using overall accuracy, macro F1, and weighted F1.
+
+| Model | Accuracy | Macro F1 | Weighted F1 |
+|---|---:|---:|---:|
+| MLP baseline | 87.99% | 87.97% | 87.97% |
+| **RoBERTa + LoRA** | **93.47%** | **93.47%** | **93.47%** |
+
+### Key result
+
+**RoBERTa + LoRA improved macro F1 by 5.48 percentage points over the MLP baseline.**
+
+This improvement was also visible at the individual-intent level.
+
+For example:
+
+| Banking Intent | MLP F1 | RoBERTa + LoRA F1 |
+|---|---:|---:|
+| `contactless_not_working` | 57.6% | **96.1%** |
+| `card_not_working` | 66.7% | **91.6%** |
+| `verify_my_identity` | 71.2% | **94.0%** |
+| `unable_to_verify_identity` | 81.5% | **96.1%** |
+| `why_verify_identity` | 80.0% | **96.3%** |
+
+The largest improvements were concentrated around several card-related and identity-verification intents.
 
 ---
 
-## 📌 Key Insights
+## 🔐 PII Protection
 
-This project highlights several important considerations when building practical AI systems.
+Because banking customer queries can contain sensitive information, the prediction workflow includes a dedicated PII-processing step before classification.
 
-Key findings include:
-- **LLMs become more reliable when combined with external tools and validation layers.** Rather than relying only on generated knowledge, the agent retrieves and verifies real-world information before producing results.
-- **Agent systems require careful handling of external dependencies.** APIs introduce latency, failures, and incomplete data, requiring fallback strategies and robust execution flows.
-- **Retrieval improves the quality of generated outputs.** Combining structured POI data with optional contextual retrieval allows the model to produce more relevant and grounded itineraries.
-- **Interactive visualization improves usability of AI-generated results.** Mapping generated recommendations helps users understand and evaluate the produced itinerary.
+The implemented pipeline can:
 
-Overall, the project demonstrates how LLMs can be integrated with traditional software engineering practices to build more reliable AI applications.
+- redact credit-card information
+- redact CVV information
+- hash email addresses
+- hash phone numbers
+
+For hashed identifiers, the implementation uses SHA-256 and retains a shortened hash representation.
+
+### Example
+
+![PII Protection](pii_protection.png)
+
+The prediction function can also return the top three predicted intents, rather than only the highest-probability class.
 
 ---
 
-## 📦 Technologies
+## 🔎 Example Prediction
 
-- Python
-- OpenAI Responses API
-- Streamlit
-- PyDeck
-- Pandas
-- Scikit-learn
-- OpenStreetMap APIs
-  - Nominatim
-  - Overpass API
-- Wikivoyage / Wikimedia APIs
-- Git
-- JSON-based local persistence
+For a customer query concerning an unexpected charge, the model produced a ranked set of possible intents.
+
+The highest-probability predictions included:
+
+| Rank | Intent |
+|---:|---|
+| 1 | `direct_debit_payment_not_recognised` |
+| 2 | `extra_charge_on_statement` |
+| 3 | `transaction_charged_twice` |
+
+The example illustrates an important characteristic of banking intent classification: some intents are semantically close and can involve similar language while representing different customer issues.
+
+---
+
+## ⚙️ Key Technical Challenges
+
+### Distinguishing closely related banking intents
+
+With **77 separate classes**, several intents share similar vocabulary and subject matter. The model therefore needs to distinguish between subtle differences in customer requests rather than simply identifying broad banking topics.
+
+### Establishing a meaningful baseline
+
+The TF-IDF + MLP model provides a conventional neural-network reference point, making it possible to evaluate whether the additional complexity of a transformer-based approach translates into measurable improvements.
+
+### Parameter-efficient transformer fine-tuning
+
+Rather than updating the entire RoBERTa model, LoRA was used to adapt selected attention projections while keeping the number of trainable parameters relatively small.
+
+### Protecting sensitive input data
+
+The prediction workflow processes personally identifiable and financial information before classification, allowing example customer queries containing sensitive data to be handled without passing the original sensitive values directly into the model.
+
+---
+
+## 🧪 Evaluation
+
+Model performance was evaluated using:
+
+- **Accuracy**
+- **Macro F1**
+- **Weighted F1**
+- Per-intent **precision**
+- Per-intent **recall**
+- Per-intent **F1**
+
+Macro F1 was particularly useful for comparing performance across the 77 intents because it gives each class equal weight rather than allowing the most frequent intents to dominate the overall score.
+
+The models were also evaluated across different execution environments, including a local GPU environment and Kaggle, producing similar results.
+
+---
+
+## 🚀 Future Steps
+
+Possible extensions based on the current project include:
+
+### Active learning
+
+Use uncertain predictions to identify examples that would be most valuable for additional labeling and model improvement.
+
+### Model monitoring
+
+Track classification performance and changes in incoming data over time.
+
+### Inference optimization
+
+Explore techniques such as model quantization and caching to reduce inference cost and latency.
+
+### Feedback-driven improvement
+
+Introduce feedback loops that can provide additional training data for future iterations of the classifier.
+
+---
+
+## 💡 Key Takeaway
+
+This project demonstrates a complete text-classification workflow for banking customer queries, moving from a **TF-IDF + MLP baseline** to **parameter-efficient RoBERTa fine-tuning with LoRA**.
+
+The transformer-based approach achieved **93.47% accuracy and macro F1**, improving macro F1 by **5.48 percentage points** over the baseline.
+
+Beyond model performance, the project also incorporates **PII protection directly into the prediction workflow**, making privacy considerations part of the classification pipeline rather than an afterthought.
+
+### Analysis Walkthrough
+{{< notebook
+    src="banking-classification-bert.ipynb"
+    show_code=false
+    show_outputs=true
+>}}
