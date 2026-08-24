@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://dianaspahieva.github.io/portfolio/"><b>? Live Portfolio</b></a>
+  <a href="https://dianaspahieva.github.io/portfolio/"><b>🌍 Live Portfolio</b></a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="https://github.com/DianaSpahieva"><b>GitHub</b></a>
   &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -19,7 +19,7 @@
 
 ---
 
-# ? About
+# 👋 About
 
 Hi! I'm **Diana**, a Data Scientist and Data Engineer who enjoys solving problems with data.
 
@@ -29,7 +29,7 @@ I'm particularly interested in applying data and AI to real-world problems with 
 
 ---
 
-# ? Core Expertise
+# 🧠 Core Expertise
 
 * Machine Learning & Predictive Modeling
 * Deep Learning
@@ -41,7 +41,7 @@ I'm particularly interested in applying data and AI to real-world problems with 
 
 ---
 
-# ? Technical Skills
+# 🛠 Technical Skills
 
 ## Data Science & Machine Learning
 
@@ -117,7 +117,7 @@ I'm particularly interested in applying data and AI to real-world problems with 
 
 ---
 
-# ? What This Portfolio Showcases
+# 🚀 What This Portfolio Showcases
 
 This portfolio brings together professional, academic, and personal work demonstrating experience with:
 
@@ -134,16 +134,16 @@ This portfolio brings together professional, academic, and personal work demonst
 
 Project pages provide detailed breakdowns of the problems addressed, technical approaches, technologies used, results, and skills demonstrated.
 
-? **Explore the portfolio:** [dianaspahieva.github.io](https://dianaspahieva.github.io/)
+👉 **Explore the portfolio:** [dianaspahieva.github.io](https:dianaspahieva.github.io/portfolio/)
 
 ---
 
-# ? Connect
+# 📫 Connect
 
-? **Portfolio:** [dianaspahieva.github.io/portfolio](https://dianaspahieva.github.io/portfolio/)
+🌍 **Portfolio:** [dianaspahieva.github.io/portfolio](https://dianaspahieva.github.io/portfolio/)
 
-? **LinkedIn:** [linkedin.com/in/diana-nikolaeva](https://linkedin.com/in/diana-nikolaeva)
+💼 **LinkedIn:** [linkedin.com/in/diana-nikolaeva](https://linkedin.com/in/diana-nikolaeva)
 
-? **GitHub:** [github.com/DianaSpahieva/portfolio](https://github.com/DianaSpahieva/portfolio)
+💻 **GitHub:** [github.com/DianaSpahieva/portfolio](https://github.com/DianaSpahieva/portfolio)
 
-? **Email:** [diana.nikolaeva.spahieva@gmail.com](mailto:diana.nikolaeva.spahieva@gmail.com)
+📧 **Email:** [diana.nikolaeva.spahieva@gmail.com](mailto:diana.nikolaeva.spahieva@gmail.com)
