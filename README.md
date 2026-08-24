@@ -1,4 +1,4 @@
-# ? Personal Portfolio - Data Science & Data Engineering
+# 🌐  Personal Portfolio - Data Science & Data Engineering
 
 <h1 align="center">Building intelligent data solutions that turn complex data into actionable insights.</h1>
 
