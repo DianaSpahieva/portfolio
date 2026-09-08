@@ -4,7 +4,7 @@ date: 2026-02-15
 links:
   - type: github
     name: 👾 GitHub Repository
-    url: https://github.com/DianaSpahieva/Healthcare-Deep-Learning-PyTorch # to change
+    url: https://github.com/DianaSpahieva # to change
 tags:
   - abc
   - def
