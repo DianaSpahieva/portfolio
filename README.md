@@ -144,6 +144,6 @@ Project pages provide detailed breakdowns of the problems addressed, technical a
 
 💼 **LinkedIn:** [linkedin.com/in/diana-nikolaeva](https://linkedin.com/in/diana-nikolaeva)
 
-💻 **GitHub:** [github.com/DianaSpahieva/portfolio](https://github.com/DianaSpahieva/portfolio)
+💻 **GitHub:** [github.com/DianaSpahieva](https://github.com/DianaSpahieva)
 
 📧 **Email:** [diana.nikolaeva.spahieva@gmail.com](mailto:diana.nikolaeva.spahieva@gmail.com)
