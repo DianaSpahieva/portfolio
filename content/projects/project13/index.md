@@ -1,5 +1,5 @@
 ---
-title: Project 13(emoji) - dummy project, info to be added
+title: Project 13 🧟‍♀️ - dummy project, info to be added
 date: 2026-02-15
 links:
   - type: github

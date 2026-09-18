@@ -14,7 +14,7 @@ tags:
   - Python
 ---
 
-# 🏦 Banking Customer Intent Classification
+# Banking Customer Intent Classification
 
 **Natural Language Processing | Text Classification | Transformer Fine-Tuning | LoRA | Privacy-Aware ML**
 
