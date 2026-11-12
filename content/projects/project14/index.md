@@ -820,37 +820,6 @@ Here is how the orchestration job executes in Databricks:
 
 *Databricks Job configuration showing the ingestion pipeline, data quality notebook, transformation pipeline and final Python reporting task.*
 
-### 🛑 Job-Level Data Quality Gate SAID TWICE!!!!!
-
-The `dq_check` notebook acts as a control point between ingestion and transformation.
-
-While individual Bronze and Silver quality expectations evaluate records without necessarily stopping their pipelines, this gate evaluates the health of the entire ingestion run.
-
-It performs two checks using the job's `run_date` parameter:
-
-**1. Ingestion Completeness**
-
-All seven Bronze source tables must contain at least one record ingested on the current run date.
-
-If any table contains zero records for that date, the gate treats this as a potential ingestion failure or missing source data and records a failure.
-
-**2. Quarantine-Rate Threshold**
-
-The notebook calculates the quarantine rate separately for each of the seven Bronze sources, using only records ingested on the current run date.
-
-A configurable threshold of **50%** is applied. If the quarantine rate for any source exceeds this threshold, the gate fails.
-
-```text
-Quarantine Rate =
-    Quarantined Records
-    / (Valid Records + Quarantined Records)
-    × 100
-```
-
-If either check fails, the notebook raises an exception. Because the transformation task depends on successful completion of the quality gate, Silver and Gold processing will not start.
-
-This provides a distinction between isolated record-level quality issues, which are monitored through expectations and quarantine mechanisms, and systemic ingestion problems, which should stop the downstream workflow.
-
 ### 📊 Post-Run Reporting
 
 The final task executes `jobs/report.py` as a Spark Python task after the transformation pipeline completes successfully.
@@ -878,7 +847,7 @@ The orchestration job uses a job-level `run_date` parameter, defaulting to the D
 {{job.start_time.iso_date}}
 ```
 
-This allows the workflow to evaluate ingestion completeness and quarantine rates against the date of the current execution rather than relying on hard-coded dates.
+This provides a consistent execution date for tasks that require run-specific processing, without relying on hard-coded dates.
 
 The target catalog is supplied through the Databricks Asset Bundle configuration. The same orchestration definition can therefore reference the appropriate catalog and deployed pipeline resources across development, UAT and production.
 
