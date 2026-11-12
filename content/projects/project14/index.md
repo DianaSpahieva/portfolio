@@ -1187,7 +1187,7 @@ The production workflow is deliberately separate from the UAT CI workflow. It pr
 *Successful production deployment of ForwardStep through the manually triggered Deploy Prod workflow.*
 
 
-Following deployment, the production orchestration job was configured with a recurring execution schedule and job-failure notifications directly in the Databricks workspace, enabling automated pipeline execution and visibility into unsuccessful runs.
+Separately from the bundle-managed deployment, the production orchestration job was configured directly in the production Databricks workspace with a recurring execution schedule and job-failure notifications.
 
 ---
 
