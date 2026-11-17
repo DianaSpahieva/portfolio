@@ -43,7 +43,7 @@ sections:
 
         <div class="flex flex-wrap gap-3 mt-4">
 
-        <a href="/portfolio/data-science/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
+        <a href="/portfolio/tags/data-science/" class="px-4 py-2 rounded-full border border-[#5a920b] bg-black/20 hover:bg-[#5a920b]/30 transition no-underline">
         Data Science
         </a>
 
